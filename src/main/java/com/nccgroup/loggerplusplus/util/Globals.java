@@ -78,9 +78,26 @@ public class Globals {
     public static final String PREF_MAX_RESP_SIZE = "maxRespBodySize";
     public static final String PREF_TABLE_PILL_STYLE = "tagsStyle";
 
+    // Graylog Exporter Preferences
+    public static final String PREF_GRAYLOG_ADDRESS = "graylogAddress";
+    public static final String PREF_GRAYLOG_PORT = "graylogPort";
+    public static final String PREF_GRAYLOG_PROTOCOL = "graylogProtocol";
+    public static final String PREF_GRAYLOG_API_TOKEN = "graylogApiToken";
+    public static final String PREF_GRAYLOG_DELAY = "graylogDelay";
+    public static final String PREF_GRAYLOG_FILTER = "graylogFilter";
+    public static final String PREF_GRAYLOG_FILTER_PROJECT_PREVIOUS = "graylogFilterProjectPrevious";
+    public static final String PREF_GRAYLOG_AUTOSTART_GLOBAL = "graylogAutostartGlobal";
+    public static final String PREF_GRAYLOG_AUTOSTART_PROJECT = "graylogAutostartProject";
+    public static final String PREF_PREVIOUS_GRAYLOG_FIELDS = "previousGraylogFields";
+    public static final String PREF_GRAYLOG_COMPRESSION_ENABLED = "graylogCompressionEnabled";
+    public static final String PREF_GRAYLOG_TRANSPORT = "graylogTransport";
+    public static final String PREF_GRAYLOG_INPUT_ID = "graylogInputId";
+
     public enum ElasticAuthType {ApiKey, Basic, None}
 
     public enum Protocol {HTTP, HTTPS}
+
+    public enum GraylogTransport {HTTP, TCP, UDP}
     public static final String DEFAULT_COLOR_FILTERS_JSON = "{\"2add8ace-b652-416a-af08-4d78c5d22bc7\":{\"uid\":\"2add8ace-b652-416a-af08-4d78c5d22bc7\"," +
             "\"filter\":{\"filter\":\"Request.Complete == False\"},\"filterString\":\"Request.Complete == False\",\"backgroundColor\":{\"value\":-16777216,\"falpha\":0.0}," +
             "\"foregroundColor\":{\"value\":-65536,\"falpha\":0.0},\"enabled\":true,\"modified\":false,\"shouldRetest\":true,\"priority\":1}}";
